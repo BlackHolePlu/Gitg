@@ -53,10 +53,31 @@
 
 // showPrimes(11)
 
-function minInt(a, b) {
-    let result = (a > b) ? b : (a < b) ? a : false;
-    return result;
+// function minInt(a, b) {
+//     let result = (a > b) ? b : (a < b) ? a : false;
+//     return result;
+// }
+
+
+// document.write(minInt(parseInt(prompt()), parseInt(prompt())))
+
+// const users = {
+//     name: 'uluk',
+//     age: 17,
+//     addres: 'Bishkek'
+// }
+
+
+// console.log(users.age);
+
+const user = {
+    name: 'John',
+    surName: 'Smith'
 }
 
+user.name = ' Pete';
+console.log(user.name,'\n',user.surName);
 
-document.write(minInt(parseInt(prompt()), parseInt(prompt())))
+
+delete user.name
+console.log(user);
